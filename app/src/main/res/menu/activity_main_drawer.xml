@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_responsive"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_responsive"/>
+        <item
+            android:id="@+id/nav_natmotion"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_nat_motion"/>
+        <item
+            android:id="@+id/nav_aware"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_aware"/>
+        <item
+            android:id="@+id/nav_intentional"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_intentional"/>
+    </group>
+
+    <item android:title="@string/menu_resources">
+        <menu>
+            <item
+                android:id="@+id/nav_materialspec"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_material_design_spec"/>
+            <item
+                android:id="@+id/nav_playground"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_interpolator_playground"/>
+            <item
+                android:id="@+id/nav_github"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_github_repo"/>
+        </menu>
+    </item>
+
+</menu>

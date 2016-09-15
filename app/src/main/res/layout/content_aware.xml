@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AwareActivity">
+
+    <TextView
+        android:id="@+id/userfeedback_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/mat_princpl_aware"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_sublayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/titles"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_text_gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="72dp"
+                    android:text="Text Gone"/>
+
+                <Button
+                    android:id="@+id/btn_text_visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="72dp"
+                    android:text="Text Visibile"/>
+
+                <Button
+                    android:id="@+id/btn_view_gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="88dp"
+                    android:text="View Gone"/>
+
+                <Button
+                    android:id="@+id/btn_view_visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Visibile"/>
+
+                <Button
+                    android:id="@+id/btn_view_elevation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Elevation"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/no_anim_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/vct_wrong"/>
+
+                <TextView
+                    android:id="@+id/no_text_gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textSize="11sp"
+                    android:text="@string/mater_motion_sentence"/>
+
+                <TextView
+                    android:id="@+id/no_text_visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textSize="11sp"
+                    android:text="@string/mater_motion_sentence"/>
+
+                <View
+                    android:id="@+id/no_view_gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_margin="8dp"
+                    android:background="?attr/colorPrimary"/>
+
+                <View
+                    android:id="@+id/no_view_visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_margin="8dp"
+                    android:background="?attr/colorAccent"/>
+
+                <TextView
+                    android:id="@+id/no_text_elevation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:visibility="gone"
+                    android:text="@string/mater_motion_sentence"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yes_anim_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no_anim_layout"
+                android:layout_weight="2"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/vct_checkmark"/>
+
+                <TextView
+                    android:id="@+id/yes_text_gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textSize="11sp"
+                    android:text="@string/mater_motion_sentence"/>
+
+                <TextView
+                    android:id="@+id/yes_text_visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textSize="11sp"
+                    android:text="@string/mater_motion_sentence"/>
+
+                <View
+                    android:id="@+id/yes_view_gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_margin="8dp"
+                    android:background="?attr/colorPrimary"/>
+
+                <View
+                    android:id="@+id/yes_view_visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_margin="8dp"
+                    android:background="?attr/colorAccent" />
+
+                <TextView
+                    android:id="@+id/yes_text_elevation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:visibility="gone"
+                    android:text="@string/mater_motion_sentence"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
+
+

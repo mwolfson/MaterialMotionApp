@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AwareActivity"
+    tools:showIn="@layout/app_bar_simpleanim">
+
+    <TextView
+        android:id="@+id/viewab_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mater_motion_matters_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+    <TextView
+        android:id="@+id/glyph_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewab_title"
+        android:text="@string/motion_matters_viewhierarchy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+    <ImageView
+        android:id="@+id/icon_livestream"
+        android:layout_width="@dimen/scene_iconsize_endsize"
+        android:layout_height="@dimen/scene_iconsize_endsize"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/glyph_text"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/vct_livestream"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Livestream"
+        android:visibility="visible"
+        android:layout_below="@+id/icon_livestream"/>
+
+    <ImageView
+        android:id="@+id/icon_design"
+        android:layout_width="@dimen/scene_iconsize_minimized"
+        android:layout_height="@dimen/scene_iconsize_minimized"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/vct_design"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Design"
+        android:visibility="gone"
+        android:layout_alignBaseline="@+id/icon_design"
+        android:layout_below="@+id/icon_design"/>
+
+    <TextView
+        android:id="@+id/glyph_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon_livestream"
+        android:layout_below="@+id/glyph_text"
+        android:text="@string/shared_stage"
+        android:layout_marginTop="48dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+</RelativeLayout>
+

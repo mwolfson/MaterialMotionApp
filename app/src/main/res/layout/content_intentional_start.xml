@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AwareActivity">
+
+    <LinearLayout
+        android:id="@+id/intentional_button_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_300"
+        android:padding="16dp"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/nat_btn_1"
+            android:layout_width="@dimen/vct_btn_size"
+            android:layout_height="@dimen/vct_btn_size"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:src="@drawable/vct_checkmark"/>
+
+        <ImageView
+            android:id="@+id/nat_btn_2"
+            android:layout_width="@dimen/vct_btn_size"
+            android:layout_height="@dimen/vct_btn_size"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:src="@drawable/vct_double_checkmark"/>
+
+
+        <ImageView
+            android:id="@+id/nat_btn_3"
+            android:layout_width="@dimen/vct_btn_size"
+            android:layout_height="@dimen/vct_btn_size"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:src="@drawable/vct_wrong"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/viewab_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intentional_button_linear"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="16dp"
+        android:text="@string/mat_princpl_intentional"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:transitionName="@string/trans_mat_title"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewab_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_livestream"
+            android:layout_width="@dimen/scene_iconsize_start"
+            android:layout_height="@dimen/scene_iconsize_start"
+            android:layout_margin="16dp"
+            android:src="@drawable/vct_livestream"
+            android:transitionName="@string/trans_livestream"/>
+
+        <TextView
+            android:id="@+id/motion_text_livestream"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mater_motion_sentence"
+            android:textSize="11sp"
+            android:transitionName="@string/trans_mat_text"/>
+
+        <ImageView
+            android:id="@+id/hero_img1"
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dcnyc_group_sm"
+            android:transitionName="@string/trans_hero1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_design"
+            android:layout_width="@dimen/scene_iconsize_start"
+            android:layout_height="@dimen/scene_iconsize_start"
+            android:layout_margin="16dp"
+            android:src="@drawable/vct_design"
+            android:transitionName="@string/trans_livestream" />
+
+        <TextView
+            android:id="@+id/motion_text_design"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mater_motion_sentence"
+            android:textSize="11sp"
+            android:transitionName="@string/trans_mat_text"/>
+
+        <ImageView
+            android:id="@+id/hero_img2"
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dcnyc_keynote_sm"
+            android:transitionName="@string/trans_hero1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/glyph_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/glyph_img"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_glyph_sm"
+            android:transitionName="@string/trans_glyph_img"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/glyph_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/glyph_layout"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/shared_stage"
+        android:transitionName="@string/trans_glyph_text"/>
+
+</RelativeLayout>
+

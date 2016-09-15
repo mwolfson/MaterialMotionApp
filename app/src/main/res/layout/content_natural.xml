@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:appearIn=".NaturalMotionActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:padding="16dp"
+        android:background="@color/grey_300">
+
+        <ImageView
+            android:id="@+id/nat_btn_1"
+            android:layout_width="@dimen/vct_btn_size"
+            android:layout_height="@dimen/vct_btn_size"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/vct_arrow_up_good"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <ImageView
+            android:id="@+id/nat_btn_2"
+            android:layout_width="@dimen/vct_btn_size"
+            android:layout_height="@dimen/vct_btn_size"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/vct_arrow_down_good"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+        <ImageView
+            android:id="@+id/nat_btn_3"
+            android:layout_width="@dimen/vct_btn_size"
+            android:layout_height="@dimen/vct_btn_size"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/vct_arrow_up_bad"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+        <ImageView
+            android:id="@+id/nat_btn_4"
+            android:layout_width="@dimen/vct_btn_size"
+            android:layout_height="@dimen/vct_btn_size"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/vct_arrow_down_bad"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+        <ImageView
+            android:id="@+id/nat_btn_5"
+            android:layout_width="@dimen/vct_btn_size"
+            android:layout_height="@dimen/vct_btn_size"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/vct_arrow_up_caution"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@color/grey_300">
+
+        <TextView
+            android:id="@+id/minValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:text="0"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/maxValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="3000"/>
+
+        <TextView
+            android:id="@+id/curentValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="300"/>
+
+        <SeekBar
+            android:id="@+id/millisSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@+id/curentValue"
+            android:background="@color/grey_300"
+            android:progress="300"
+            android:max="3000"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/userfeedback_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       android:layout_margin="16dp"
+        android:text="@string/mat_princpl_natural"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+
+    <ImageView
+        android:id="@+id/big_red_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/circle"
+        android:layout_gravity="center" />
+
+</LinearLayout>
