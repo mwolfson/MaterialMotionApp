@@ -7,6 +7,7 @@
     <string name="action_settings">Settings</string>
     <string name="mater_motion_sentence">Motion in the world of material design is used to describe spatial relationships, functionality, and intention with beauty and fluidity.</string>
     <string name="mater_motion_matters_title">Why does motion matter?</string>
+    <string name="mater_mation_characteristics">Material in motion has the following characteristics:</string>
     <string name="mater_motion_matters_subtitle">Motion shows how an app is organized and what it can do.</string>
     <string name="mater_motion_matters_text">Guided focus between views\nHints at what will happen if a user completes a gesture\nHierarchical and spatial relationships between elements\nDistraction from what’s happening behind the scenes (like fetching content or loading the next view)\nCharacter, polish, and delight</string>
     <string name="motion_matters_guidedfocus"> Guided focus between views</string>
@@ -18,29 +19,35 @@
     <string name="user_action">User action is the essence of experience design. The primary actions are inflection points that transform the whole design. Their emphasis makes core functionality immediately apparent and provides waypoints for the user.</string>
     <string name="changes_derive_energy_from_user_input">Changes in the interface derive their energy from user actions. Motion that cascades from touch respects and reinforces the user as the prime mover.</string>
 
-    <string name="sceneTransSubTitle"></string>
-    <string name="menu_aware">Aware</string>
-    <string name="menu_intentional">Intentional</string>
-    <string name="menu_responsive">Responsive</string>
-    <string name="menu_nat_motion">Natural</string>
+    <string name="aware">Aware</string>
+    <string name="intentional">Intentional</string>
+    <string name="responsive">Responsive</string>
+    <string name="natural">Natural</string>
+
+    <string name="mat_charac_responsive">Material is full of energy.\nIt quickly responds to user input precisely where the user triggers it.</string>
+    <string name="mat_charac_aware">Material is aware of its surroundings, including the user and other material around it. It can be attracted to objects and respond appropriately to user intent.</string>
+    <string name="mat_charac_natural">Material depicts natural movement inspired by forces in the real world.</string>
+    <string name="mat_charac_intentional">Material in motion guides focus to the right spot at the right time.</string>
+
     <string name="menu_shared_element_transitions">Shared Element Transitions</string>
     <string name="menu_resources">Resources</string>
     <string name="menu_interpolator_playground">Interpolator Playground</string>
     <string name="menu_github_repo">Github Repo</string>
     <string name="menu_material_design_spec">Material Design Spec</string>
 
-    <string name="mat_princpl_responsive">Material is full of energy.\nIt quickly responds to user input precisely where the user triggers it.</string>
-    <string name="mat_princpl_aware">Material is aware of its surroundings, including the user and other material around it. It can be attracted to objects and respond appropriately to user intent.</string>
-    <string name="mat_princpl_natural">Material depicts natural movement inspired by forces in the real world.</string>
-    <string name="mat_princpl_intentional">Material in motion guides focus to the right spot at the right time.</string>
-
     <string name="multiple_elements_transition">When multiple elements remain visible during a transition, only the most important ones should be included. Some elements may disappear during the transition but reappear once the transition completes, if they are too distracting during the transition itself.</string>
+
     <string name="trans_livestream">trans_livestream</string>
     <string name="trans_hero1">trans_hero_img</string>
     <string name="trans_mat_text">trans_motiontext</string>
     <string name="trans_glyph_text">trans_shared_text</string>
     <string name="trans_mat_title">trans_mat_title</string>
     <string name="trans_glyph_img">trans_glyph_img</string>
+    <string name="sceneTransSubTitle">trans_subtitle</string>
+    <string name="trans_charac1">trans_charac1</string>
+    <string name="trans_charac2">trans_charac2</string>
+    <string name="trans_charac3">trans_charac3</string>
+    <string name="trans_charac4">trans_charac4</string>
 
     <string-array name="interpolators">
         <item>Linear</item>

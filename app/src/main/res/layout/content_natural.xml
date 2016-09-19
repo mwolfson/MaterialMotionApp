@@ -120,9 +120,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-       android:layout_margin="16dp"
-        android:text="@string/mat_princpl_natural"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+        android:layout_margin="16dp"
+        android:text="@string/mat_charac_natural"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:transitionName="@string/trans_charac3"/>
 
 
     <ImageView

@@ -21,8 +21,9 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/mat_princpl_aware"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+        android:text="@string/mat_charac_aware"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:transitionName="@string/trans_charac2"/>
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"

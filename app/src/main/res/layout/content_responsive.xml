@@ -22,8 +22,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/mat_princpl_responsive"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+        android:text="@string/mat_charac_responsive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:transitionName="@string/trans_charac1" />
 
    <Button
        android:layout_width="match_parent"

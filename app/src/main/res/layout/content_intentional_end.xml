@@ -27,7 +27,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="8dp"
-        android:text="@string/mat_princpl_intentional"
+        android:text="@string/mat_charac_intentional"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:transitionName="@string/trans_mat_title"/>
 

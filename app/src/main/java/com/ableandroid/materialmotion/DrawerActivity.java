@@ -53,6 +53,9 @@ public class DrawerActivity  extends AppCompatActivity implements NavigationView
             Intent animIntent =  new Intent(this, PlaygroundActivity.class);
             animIntent.putExtra(EXTRA_DEMO_TYPE, "playgroundActivity");
             startActivity(animIntent);
+        } else if (id == R.id.nav_home) {
+            Intent homeIntent =  new Intent(this, HomeActivity.class);
+            startActivity(homeIntent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
