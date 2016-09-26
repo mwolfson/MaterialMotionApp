@@ -11,4 +11,8 @@
     <dimen name="scene_iconsize_start">64dp</dimen>touch_raise
     <dimen name="touch_raise">8dp</dimen>
     <dimen name="vct_btn_size">48dp</dimen>
+    <dimen name="card_size_unexpand">124dp</dimen>
+    <dimen name="card_size_expand_sm">180dp</dimen>
+    <dimen name="card_size_expand_md">204dp</dimen>
+    <dimen name="card_size_expand_lg">252dp</dimen>
 </resources>

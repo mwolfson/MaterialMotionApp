@@ -34,7 +34,7 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".PlaygroundActivity"
+            android:name=".playground.PlaygroundActivity"
             android:label="Interpolator Playground"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
@@ -44,7 +44,7 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".TouchFeedbackActivity"
+            android:name=".ResponsiveActivity"
             android:label="Touch Feedback"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>

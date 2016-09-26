@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ableandroid.materialmotion;
+package com.ableandroid.materialmotion.playground;
 
 /**
  * Callback used to update the UI when path control points are

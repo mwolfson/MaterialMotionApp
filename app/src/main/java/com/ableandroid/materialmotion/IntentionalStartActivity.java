@@ -65,7 +65,8 @@ public class IntentionalStartActivity extends DrawerActivity {
     private void setupViews() {
         final ImageView transGoodBtn = (ImageView) findViewById(R.id.nat_btn_1);
         final ImageView transCautionBtn = (ImageView) findViewById(R.id.nat_btn_2);
-        final ImageView transBadBtn = (ImageView) findViewById(R.id.nat_btn_3);
+        final ImageView transTwoItemsBad = (ImageView) findViewById(R.id.nat_btn_3);
+        final ImageView transBadBtn = (ImageView) findViewById(R.id.nat_btn_4);
 
         final ImageView livestreamIcon = (ImageView) findViewById(R.id.icon_livestream);
         final ImageView heroImg1 = (ImageView) findViewById(R.id.hero_img1);
@@ -107,6 +108,21 @@ public class IntentionalStartActivity extends DrawerActivity {
 
                 Pair<View, String> p1 = Pair.create((View)livestreamIcon, transLivestream);
                 Pair<View, String> p2 = Pair.create((View)textLivestream, transText);
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.
+                        makeSceneTransitionAnimation(mActivity, p1, p2);
+
+                startActivity(intent, options.toBundle());
+            }
+        });
+
+        transTwoItemsBad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), IntentionalEndActivity.class);
+
+                Pair<View, String> p1 = Pair.create((View)livestreamIcon, transLivestream);
+                Pair<View, String> p2 = Pair.create((View)heroImg1, transHero);
 
                 ActivityOptionsCompat options = ActivityOptionsCompat.
                         makeSceneTransitionAnimation(mActivity, p1, p2);
@@ -211,7 +227,7 @@ public class IntentionalStartActivity extends DrawerActivity {
             }
         });
 
-        textLivestream.setOnClickListener(new View.OnClickListener() {
+        textDesign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), IntentionalEndActivity.class);

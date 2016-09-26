@@ -1,5 +1,6 @@
 package com.ableandroid.materialmotion;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -8,9 +9,12 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.PopupWindow;
 
-public class TouchFeedbackActivity extends DrawerActivity  {
+public class ResponsiveActivity extends DrawerActivity  {
     private View mainView;
+    private Activity mActivity;
+    private PopupWindow popup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +22,8 @@ public class TouchFeedbackActivity extends DrawerActivity  {
         setContentView(R.layout.act_responsive);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        mActivity = this;
 
         getSupportActionBar().setTitle("Responsive Motion");
 
@@ -53,5 +59,7 @@ public class TouchFeedbackActivity extends DrawerActivity  {
 
 
     }
+
+
 
 }

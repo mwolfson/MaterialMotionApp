@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ableandroid.materialmotion;
+package com.ableandroid.materialmotion.playground;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -44,6 +44,9 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.ableandroid.materialmotion.DrawerActivity;
+import com.ableandroid.materialmotion.R;
+
 import java.lang.reflect.Constructor;
 
 import static android.widget.LinearLayout.LayoutParams;
@@ -72,7 +75,6 @@ public class PlaygroundActivity extends DrawerActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
         getSupportActionBar().setTitle("Interpolator Playground");
 

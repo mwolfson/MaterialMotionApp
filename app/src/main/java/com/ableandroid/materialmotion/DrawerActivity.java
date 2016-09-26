@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.ableandroid.materialmotion.playground.PlaygroundActivity;
+
 /**
  * Created by mwolfson on 8/19/16.
  */
@@ -44,7 +46,7 @@ public class DrawerActivity  extends AppCompatActivity implements NavigationView
             Intent sceneIntent =  new Intent(this, IntentionalStartActivity.class);
             startActivity(sceneIntent);
         } else if (id == R.id.nav_responsive) {
-            Intent touchFeedbackIntent =  new Intent(this, TouchFeedbackActivity.class);
+            Intent touchFeedbackIntent =  new Intent(this, ResponsiveActivity.class);
             startActivity(touchFeedbackIntent );
         } else if (id == R.id.nav_natmotion) {
             Intent animIntent =  new Intent(this, NaturalMotionActivity.class);

@@ -5,6 +5,9 @@
     <color name="colorAccent">#5dfdad</color>
     <color name="colorBase">#ffffff</color>
 
+    <color name="green_050_trans">#80d0f8ce</color> <!-- Use with black text -->
+    <color name="red_050_trans">#80fde0dc</color> <!-- Use with black text -->
+
     <!-- Material Color Resources -->
     <color name="red_050">#fde0dc</color> <!-- Use with black text -->
     <color name="red_100">#f9bdbb</color> <!-- Use with black text -->

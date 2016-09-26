@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ableandroid.materialmotion;
+package com.ableandroid.materialmotion.playground;
 
 import android.content.Context;
 import android.graphics.Canvas;
